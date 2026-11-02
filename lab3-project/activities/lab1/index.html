@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>21x | Stock Analytics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Add Chart.js Free Library -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="21x home">21<span>x</span></a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#screener">Screener</a>
+      <a href="#http">HTTP lab</a>
+    </nav>
+    <button id="themeToggle" class="btn ghost" type="button" aria-pressed="false">Dark mode</button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <h1>Find the stock.<br>Skip the noise.</h1>
+      <p class="lede">21x is a stock research tool for people who want to compare tickers, sectors and momentum in seconds. Sample data only, not financial advice.</p>
+      <dl class="summary" id="summary" aria-live="polite"></dl>
+    </section>
+
+    <!-- Chart Panel -->
+    <section id="performance" class="panel" style="margin-bottom: 2rem;">
+        <h2>Asset Performance (Trailing 6-Day)</h2>
+        <canvas id="stockChart" style="max-height: 300px;"></canvas>
+    </section>
+
+    <section id="screener" class="panel">
+      <h2>Stock screener</h2>
+      <div class="controls">
+        <label class="field grow">Search name, ticker or tag
+          <input id="searchInput" type="search" placeholder="Try nvda, dividend, bank">
+        </label>
+        <label class="field">Sector
+          <select id="sectorSelect"><option value="all">All sectors</option></select>
+        </label>
+        <label class="field">Sort by
+          <select id="sortSelect">
+            <option value="id">Ticker</option>
+            <option value="change-desc">Biggest gain</option>
+            <option value="change-asc">Biggest drop</option>
+            <option value="price-desc">Highest price</option>
+            <option value="cap-desc">Market cap</option>
+          </select>
+        </label>
+      </div>
+      <div id="tagBar" class="tags" aria-label="Filter by tag"></div>
+      <p id="resultCount" class="muted" aria-live="polite"></p>
+      <div id="stockGrid" class="grid"></div>
+      <p id="emptyState" class="muted" hidden>No stocks match. Clear the search or pick another sector.</p>
+    </section>
+
+    <section id="http" class="panel">
+      <h2>HTTP request lab</h2>
+      <p class="muted">Build a request to the 21x API and see the exact message a browser would send, plus the response the server would return.</p>
+      <form id="httpForm" class="controls">
+        <label class="field">Method
+          <select id="methodSelect"><option>GET</option><option>POST</option></select>
+        </label>
+        <label class="field">Ticker
+          <input id="symbolInput" type="text" value="NVDA" maxlength="6" required>
+        </label>
+        <label class="field grow" id="noteField" hidden>Watchlist note (POST body)
+          <input id="noteInput" type="text" value="Watch after earnings">
+        </label>
+        <button class="btn" type="submit">Send request</button>
+      </form>
+      <div class="split">
+        <div><h3>Request headers</h3><pre id="reqHeaders" class="code">Press "Send request".</pre></div>
+        <div><h3>Request body</h3><pre id="reqBody" class="code">(empty)</pre></div>
+        <div><h3>Response</h3><pre id="resOut" class="code">Waiting...</pre></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">21x is a fictional startup built for CSCI 3172 Lab 1. Prices are illustrative.</footer>
+  <script src="app.js"></script>
+</body>
+</html>

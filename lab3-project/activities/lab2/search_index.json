@@ -1,0 +1,134 @@
+[
+  {
+    "id": "1",
+    "title": "Snowball Awards Gala",
+    "organization": "CS Society",
+    "category": "Social",
+    "location": "McInnes Room",
+    "date": "Feb 15, 2026",
+    "isoDate": "2026-02-15",
+    "time": "7:00 PM",
+    "description": "Dress up and celebrate the best of Dal CS with awards, dinner, and dancing."
+  },
+  {
+    "id": "2",
+    "title": "Global Culture Night",
+    "organization": "International Centre",
+    "category": "Culture",
+    "location": "LeMarchant Place",
+    "date": "Mar 10, 2026",
+    "isoDate": "2026-03-10",
+    "time": "6:30 PM",
+    "description": "Food, music, and performances from students representing over 40 countries."
+  },
+  {
+    "id": "3",
+    "title": "Tech Talk: Web Accessibility",
+    "organization": "CS Society",
+    "category": "Workshop",
+    "location": "Goldberg 127",
+    "date": "Oct 22, 2026",
+    "isoDate": "2026-10-22",
+    "time": "5:30 PM",
+    "description": "Learn how WCAG, ARIA, and screen readers shape the modern web."
+  },
+  {
+    "id": "4",
+    "title": "Resume Workshop",
+    "organization": "Career Services",
+    "category": "Career",
+    "location": "SUB Room 302",
+    "date": "Nov 05, 2026",
+    "isoDate": "2026-11-05",
+    "time": "2:00 PM",
+    "description": "Get hands-on feedback on your resume from industry recruiters."
+  },
+  {
+    "id": "5",
+    "title": "Hack the Harbour",
+    "organization": "CS Society",
+    "category": "Hackathon",
+    "location": "Goldberg 127",
+    "date": "Nov 14, 2026",
+    "isoDate": "2026-11-14",
+    "time": "9:00 AM",
+    "description": "A 24-hour hackathon building tools for Halifax community groups."
+  },
+  {
+    "id": "6",
+    "title": "Winter Coat Swap",
+    "organization": "International Centre",
+    "category": "Community",
+    "location": "Student Union Building Lobby",
+    "date": "Nov 18, 2026",
+    "isoDate": "2026-11-18",
+    "time": "11:00 AM",
+    "description": "Donate or pick up warm winter gear before the first snowfall."
+  },
+  {
+    "id": "7",
+    "title": "Mock Interview Day",
+    "organization": "Career Services",
+    "category": "Career",
+    "location": "SUB Room 307",
+    "date": "Nov 25, 2026",
+    "isoDate": "2026-11-25",
+    "time": "10:00 AM",
+    "description": "Practice technical and behavioural interviews with alumni volunteers."
+  },
+  {
+    "id": "8",
+    "title": "Intro to Fintech Panel",
+    "organization": "Finance Club",
+    "category": "Panel",
+    "location": "Rowe 1028",
+    "date": "Dec 02, 2026",
+    "isoDate": "2026-12-02",
+    "time": "6:00 PM",
+    "description": "Founders and analysts discuss payments, markets, and careers in fintech."
+  },
+  {
+    "id": "9",
+    "title": "Cozy Finals Study Jam",
+    "organization": "Student Wellness",
+    "category": "Wellness",
+    "location": "Killam Library Atrium",
+    "date": "Dec 07, 2026",
+    "isoDate": "2026-12-07",
+    "time": "1:00 PM",
+    "description": "Quiet study space with tea, snacks, and a therapy dog visit."
+  },
+  {
+    "id": "10",
+    "title": "Winter Tea and Conversation",
+    "organization": "International Centre",
+    "category": "Culture",
+    "location": "LeMarchant Place",
+    "date": "Jan 20, 2027",
+    "isoDate": "2027-01-20",
+    "time": "3:00 PM",
+    "description": "Meet new friends over tea and practise conversational English."
+  },
+  {
+    "id": "11",
+    "title": "Open Source Day",
+    "organization": "CS Society",
+    "category": "Workshop",
+    "location": "Goldberg 143",
+    "date": "Feb 06, 2027",
+    "isoDate": "2027-02-06",
+    "time": "10:00 AM",
+    "description": "Make your first open source pull request with mentors on hand."
+  },
+  {
+    "id": "12",
+    "title": "Spring Career Fair",
+    "organization": "Career Services",
+    "category": "Career",
+    "location": "Dalplex Fieldhouse",
+    "date": "Mar 04, 2027",
+    "isoDate": "2027-03-04",
+    "time": "12:00 PM",
+    "description": "Meet 60+ employers hiring interns and new graduates."
+  }
+]

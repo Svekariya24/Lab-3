@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset='utf-8'>
+	<title>Magic 8-Ball Example</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+	
+</head>
+<body>
+	<section>
+		<h1>Ask for an Answer</h1>
+		<div class="magicBall">
+            <!-- Added the new dropdown to select between the two arrays -->
+            <select id="modeSelect">
+                <option value="8ball">Magic 8-Ball</option>
+                <option value="fortune">Fortune Cookie</option>
+            </select>
+		    <input type="text" id="userQuestion" placeholder="Enter your question">
+			<button onclick="getAnswer()">Ask</button>
+		</div>
+		<p id="answer"></p>
+	</section>
+	<script src='js/script.js'></script>
+</body>
+</html>
